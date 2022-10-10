@@ -26,7 +26,8 @@ function App() {
         }
 
       ]
-    }
+    },
+    { path: '*', element: <div className='text-center text-4xl font-bold mt-12'>This Page is not Available</div> }
   ])
   return (
     <div className="mx-28">
