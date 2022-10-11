@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div>
+        <div className='mx-4 md:mx-0'>
             <h2 className='text-3xl text-orange-600 text-center mt-12'>Three Questions to Answer:</h2>
             <div>
                 <h3 className='text-xl mt-8 text-green-600'>What is the purpose of React Router?</h3>

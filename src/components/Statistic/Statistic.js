@@ -8,11 +8,11 @@ const Statistic = () => {
     return (
 
         <div>
-            <h2>This is Statistic page</h2>
-            <div>
-                <h2 className='my-8 text-center text-2xl font-bold text-orange-600'>Check Your Ability, Attend the text!!</h2>
-                <div className='grid grid-cols-1 gap-12  md:grid-cols-2 mx-auto'>
-                    <LineChart className='flex ' width={500} height={400} data={quizData}>
+            <div className='mr-12 md:mr-0 mt-8'>
+                <h2 className='text-center my-8 text-2xl text-orange-600'>Charts for Name vs Total Questions:</h2>
+
+                <div className='flex justify-center'>
+                    <LineChart width={400} height={350} data={quizData}>
                         <Line type="monotone" dataKey="total" stroke="#82ca9d" />
                         <Line type="monotone" dataKey="name" stroke="#8884d8" activeDot={{ r: 8 }} />
                         <XAxis dataKey="name" />
