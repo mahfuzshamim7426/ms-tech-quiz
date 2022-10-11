@@ -10,8 +10,9 @@ const Navbar = () => {
             <nav className='text-xl flex flex-col md:flex-row'>
                 <Link className='ml-12 hover:text-orange-600' to='/'>Home</Link>
                 <Link className='ml-12 hover:text-orange-600' to='/statistic'>Statistic</Link>
-                <Link className='ml-12 hover:text-orange-600' to='/blog'>Blog</Link>
                 <Link className='ml-12 hover:text-orange-600' to='/topics'>Topics</Link>
+                <Link className='ml-12 hover:text-orange-600' to='/blog'>Blog</Link>
+
 
             </nav>
         </div>
