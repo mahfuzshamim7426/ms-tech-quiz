@@ -2,7 +2,7 @@
 MS TECH QUIZ
 
 ### Live Website URL:
-
+https://unique-kangaroo-2a5795.netlify.app/
 
 ### Specifications:
 We have declared a website with some navbar and their specific route. There is little bit description and Quiz details on Home Page.
