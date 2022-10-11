@@ -1,10 +1,11 @@
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    let activeLinkRouter = "underline";
     return (
         <div className='flex justify-between'>
             <div>
@@ -23,12 +24,23 @@ const Navbar = () => {
                 </div>
 
 
-                <div className={`text-xl flex flex-col md:flex-row justify-center w-full bg-rose-300 absolute md:bg-white md:static duration-500 ease-out ${open ? 'left-[250px]' : 'top-[-120px]'}`}>
+                <div className={`text-xl flex flex-col md:flex-row md:gap-12 justify-center w-full bg-rose-300 absolute md:bg-white md:static duration-500 ease-out ${open ? 'left-[250px]' : 'top-[-120px]'}`}>
 
-                    <Link className='ml-12 hover:text-orange-600' to='/'>Home</Link>
-                    <Link className='ml-12 hover:text-orange-600' to='/statistic'>Statistic</Link>
-                    <Link className='ml-12 hover:text-orange-600' to='/topics'>Topics</Link>
-                    <Link className='ml-12 hover:text-orange-600' to='/blog'>Blog</Link>
+                    <NavLink to='/'
+                        className={({ isActive }) =>
+                            isActive ? activeLinkRouter : undefined
+                        }
+                    >Home
+                    </NavLink>
+                    <NavLink className={({ isActive }) =>
+                        isActive ? activeLinkRouter : undefined
+                    } to='/statistic'>Statistic</NavLink>
+                    <NavLink className={({ isActive }) =>
+                        isActive ? activeLinkRouter : undefined
+                    } to='/topics'>Topics</NavLink>
+                    <NavLink className={({ isActive }) =>
+                        isActive ? activeLinkRouter : undefined
+                    } to='/blog'>Blog</NavLink>
 
                 </div>
 
