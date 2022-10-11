@@ -7,7 +7,6 @@ const QuizStart = () => {
     const quiz = useLoaderData();
     const startQuiz = quiz.data;
     const questions = startQuiz.questions;
-    console.log('questions:', questions)
     const { name, total } = startQuiz;
     console.log(quiz)
     return (

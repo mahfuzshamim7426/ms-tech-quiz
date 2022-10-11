@@ -5,7 +5,6 @@ import { toast, ToastContainer } from 'react-toastify';
 
 const Questions = ({ singleQuestion, serial, countNumber, setCountNumber }) => {
     const [showAns, setShowAns] = useState(false);
-
     const { question, options, correctAnswer } = singleQuestion;
     const handleQuizSelect = (e) => {
         const value = e.target.value;
