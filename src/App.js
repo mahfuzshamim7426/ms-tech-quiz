@@ -21,6 +21,7 @@ function App() {
         },
         {
           path: '/statistic',
+
           element: <Statistic></Statistic>
         },
         {

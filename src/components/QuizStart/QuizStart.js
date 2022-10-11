@@ -14,7 +14,7 @@ const QuizStart = () => {
         <div>
             <h2 className='text-4xl font-bold text-center mt-16 text-blue-600'>Quiz of {name}</h2>
             <h2 className='text-center mt-2 text-xl text-fuchsia-700'>Total Questions: {total}</h2>
-            <span className='text-2xl text-end'>Total Marks: {countNumber}</span>
+            <span className='text-2xl font-bold mt-2 flex justify-center md:justify-end'>Total Marks: {countNumber}</span>
             {
                 questions.map((singleQuestion, index) => <Questions
                     key={singleQuestion.id}
