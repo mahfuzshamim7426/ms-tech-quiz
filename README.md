@@ -10,4 +10,4 @@ https://unique-kangaroo-2a5795.netlify.app/
 
 # Anyone can attend the quiz. They will get the right answer instantly and also the wrong answer. They can see the total right answer that they made.
 
-# There is a chart on the statistics page and 3 questions with answers on the blog page.
+# There is a chart on the statistic page and 3 questions with answers on the blog page.

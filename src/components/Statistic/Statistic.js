@@ -6,7 +6,6 @@ const Statistic = () => {
     const quizs = useLoaderData();
     const quizData = quizs?.data || [];
     return (
-
         <div>
             <div className='mr-12 md:mr-0 mt-8'>
                 <h2 className='text-center my-8 text-2xl text-orange-600'>Charts for Name vs Total Questions:</h2>

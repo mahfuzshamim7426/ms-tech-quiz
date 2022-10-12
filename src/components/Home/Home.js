@@ -6,7 +6,6 @@ import Quiz from '../Quiz/Quiz';
 const Home = () => {
     const quizs = useLoaderData();
     const quizData = quizs?.data || [];
-    // console.log(quizs)
     return (
         <div>
             <Header></Header>

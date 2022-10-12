@@ -22,8 +22,6 @@ const Quiz = ({ quiz }) => {
             <div className='text-white text-center mt-8'>
                 Total Questions: {total}
             </div>
-
-
         </div>
     );
 };

@@ -15,7 +15,6 @@ const Questions = ({ singleQuestion, serial, countNumber, setCountNumber }) => {
         else {
             toast.error('Wrong Answer', { autoClose: 2000, closeOnClick: true, })
         }
-
     }
     return (
         <div className=' my-12 mx-4  md:mx-36 border border-sky-500 p-8 rounded-md bg-gradient-to-r from-orange-700 to-cyan-700'>
@@ -26,11 +25,7 @@ const Questions = ({ singleQuestion, serial, countNumber, setCountNumber }) => {
                         : <FontAwesomeIcon className='text-white' onClick={() => setShowAns(true)} icon={faEye} />
                 }
             </div>
-
-            <h2 className={`bg-green-400 ${showAns ? 'block' : 'hidden'} inline py-1 px-2 rounded`}>{correctAnswer}</h2>
-            {/* {showAns &&
-                <h2 className='bg-green-400 inline py-1 px-2 rounded'>{correctAnswer}</h2>
-            } */}
+            <h2 className={`bg-lime-300 ${showAns ? 'block' : 'hidden'} inline py-1 px-2 rounded`}>{correctAnswer}</h2>
 
             <div className='grid grid-cols-2 text-white'>
                 {

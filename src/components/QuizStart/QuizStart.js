@@ -8,7 +8,6 @@ const QuizStart = () => {
     const startQuiz = quiz.data;
     const questions = startQuiz.questions;
     const { name, total } = startQuiz;
-    console.log(quiz)
     return (
         <div>
             <h2 className='text-4xl font-bold text-center mt-16 text-blue-600'>Quiz of {name}</h2>
