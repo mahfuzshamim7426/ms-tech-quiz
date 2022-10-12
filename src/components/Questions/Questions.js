@@ -15,6 +15,7 @@ const Questions = ({ singleQuestion, serial, countNumber, setCountNumber }) => {
         else {
             toast.error('Wrong Answer', { autoClose: 2000, closeOnClick: true, })
         }
+
     }
     return (
         <div className=' my-12 mx-4  md:mx-36 border border-sky-500 p-8 rounded-md bg-gradient-to-r from-orange-700 to-cyan-700'>
@@ -36,7 +37,7 @@ const Questions = ({ singleQuestion, serial, countNumber, setCountNumber }) => {
                     options.map((option, indix) => (
                         <div key={indix}>
                             <label>
-                                <input className='mr-2 mt-4' type="radio" value={option} name="radiovalues" onChange={handleQuizSelect} />
+                                <input className='mr-2 mt-6' type="radio" value={option} name="radiovalues" onChange={handleQuizSelect} />
                                 <b>{option}</b>
                                 <ToastContainer closeOnClick />
                             </label>
