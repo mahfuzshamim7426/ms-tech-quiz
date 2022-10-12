@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className='flex justify-between p-2'>
             <div>
                 <div>
-                    <h2 className='text-3xl text-orange-600 font-bold'>MS TECH QUIZ</h2>
+                    <Link to='/'><h2 className='text-3xl text-orange-600 font-bold'>MS TECH QUIZ</h2></Link>
 
                 </div>
             </div>
